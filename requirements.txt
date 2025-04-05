@@ -1,9 +1,6 @@
-tensorflow
-keras
-pandas
-numpy
-jupyter
-notebook
-tqdm
-opencv-python-headless
-scikit-learn
+numpy==2.2.4
+opencv_contrib_python==4.11.0.86
+opencv_python==4.11.0.86
+opencv_python_headless==4.11.0.86
+streamlit==1.44.1
+tensorflow==2.9.3

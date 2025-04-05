@@ -21,7 +21,10 @@ st.title("Real-Time Facial Emotion Detector")
 run = st.checkbox('Start Camera')
 FRAME_WINDOW = st.image([])
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
+if not camera.isOpened():
+    st.error("Camera not found!")
+    run = False
 
 while run:
     ret, frame = camera.read()
